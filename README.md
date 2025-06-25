@@ -1,3 +1,4 @@
+
 # Random Generator Worker
 
 A simple Cloudflare Worker that generates:
@@ -22,3 +23,6 @@ https://<your-worker>.workers.dev/?type=string&length=20
 ### 2. Push to main branch
 
 Deployment is automatic via GitHub Actions.
+
+# random-generator
+
