@@ -6,7 +6,7 @@ export async function onRequest(context) {
   if (type === 'name') {
     const firstNames = ['John', 'Alice', 'Mike', 'Emma', 'David'];
     const lastNames = ['Smith', 'Johnson', 'Williams', 'Brown', 'Jones'];
-    const name = \`\${firstNames[Math.floor(Math.random() * firstNames.length)]} \${lastNames[Math.floor(Math.random() * lastNames.length)]}\`;
+    const name = ${firstNames[Math.floor(Math.random() * firstNames.length)]} \${lastNames[Math.floor(Math.random() * lastNames.length)]}\`;
     return new Response(name);
   }
 
