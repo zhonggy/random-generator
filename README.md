@@ -1,28 +1,20 @@
+# Random Generator via Cloudflare Pages Functions
 
-# Random Generator Worker
-
-A simple Cloudflare Worker that generates:
+This project provides a simple API to return:
 
 - A random English full name: `?type=name`
 - A random alphanumeric string: `?type=string&length=16`
 
-## 🧪 Examples
+## 🧪 Example Usage
 
-```
-https://<your-worker>.workers.dev/?type=name
-https://<your-worker>.workers.dev/?type=string&length=20
-```
+- https://your-project.pages.dev/api?type=name
+- https://your-project.pages.dev/api?type=string&length=20
 
-## 🚀 Deploy with GitHub Actions
+## 🚀 Deploy on Cloudflare Pages
 
-### 1. Add GitHub Secrets
-
-- `CF_API_TOKEN`: your Cloudflare API token
-- `CF_ACCOUNT_ID`: your Cloudflare account ID
-
-### 2. Push to main branch
-
-Deployment is automatic via GitHub Actions.
-
-# random-generator
-
+1. Push this repo to GitHub
+2. Create a new project in [Cloudflare Pages](https://pages.cloudflare.com/)
+3. Set:
+   - Output directory: `public`
+   - Functions directory: `functions`
+4. Deploy!
